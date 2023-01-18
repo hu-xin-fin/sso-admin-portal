@@ -44,11 +44,9 @@ export default {
     }
   },
   methods: {
-    /** 重置表单 */
     resetForm: function (formName) {
       this.$refs[formName].resetFields();
     },
-    /** 提交表单 */
     submitForm: function (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
